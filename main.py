@@ -1,8 +1,18 @@
-def main():
-    book, author, release_year, goodreads_rating = 'Dracula', 'Bram Stoker', 1897, 4.01
+import library
 
-    # print(book + ' is a novel by ' + author + ', published in ' + str(release_year) + '. It has a rating of ' + str(goodreads_rating) + ' on goodreads.')
-    print(f'{book} is a novel by {author}, published in {release_year}. It has a rating of {goodreads_rating}')
+
+def main():
+    a_random_list = ['Dracula', 1, 5.7, 'Carmilla']
+
+    print(a_random_list)
+    print(type(a_random_list[2]))
+    a1 = a_random_list.pop()
+    print(a1)
+    a_random_list.append(11)
+    print(a_random_list)
 
 if __name__ == '__main__':
     main()
+    library.greet() 
+
+# ['Dracula', 1, 5.7, 'Carmilla']
